@@ -6,6 +6,7 @@ module.exports = {
   devtool: 'source-map',
   devServer: {
     // open: true,
+    host: '0.0.0.0',
     port: '7099',
     clientLogLevel: 'warning',
     disableHostCheck: true,

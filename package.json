@@ -1,0 +1,30 @@
+{
+  "name": "qiankunexamples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm-run-all --parallel install:*",
+    "start": "npm-run-all --parallel start:*",
+    "install:main": "cd applications/main && npm i",
+    "start:main": "cd applications/main && npm start",
+    "install:app1": "cd applications/app1 && npm i",
+    "start:app1": "cd applications/app1 && npm start",
+    "install:app2": "cd applications/app2 && npm i",
+    "start:app2": "cd applications/app2 && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "gitlab@gitlab.ikcrm.com:FrontEnd/qiankunExamples.git"
+  },
+  "keywords": [
+    "qiankun",
+    "webpack5",
+    "single-spa"
+  ],
+  "author": "weiwenjia",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
