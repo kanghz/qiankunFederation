@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import RemoteComent from '../components/RemoteComent';
 export default function() {
   let remote = {
-    url: "http://192.168.80.53:7101/remoteEntry.js",
+    url: "http://192.168.80.53:7101/app1_modules.js",
     scope: "app1_remote",
     module: "./Button",
   }

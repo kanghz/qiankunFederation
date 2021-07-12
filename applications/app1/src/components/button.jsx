@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Button } from 'lx-ui';
 import './button.less';
 export default function({name, title="提示", content="", ...props}) {
   const [isShow, toggleShow] = useState(false)
@@ -11,7 +12,7 @@ export default function({name, title="提示", content="", ...props}) {
   }
   return (
     <>
-      <button onClick={toggleModel} {...props}>{name}</button>
+      <Button onClick={toggleModel} {...props}>{name}</Button>
       { isShow &&
         <div className='model' onClick={hideModel}>
           <div className="model-body">

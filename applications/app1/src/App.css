@@ -1,3 +1,4 @@
+@import url('lx-ui/dist/index.css');
 .app-main {
   display: flex;
   flex-direction: column;

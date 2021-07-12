@@ -93,7 +93,7 @@ module.exports = {
     new ModuleFederationPlugin({
       name: `${name}_remote`,	// 必传，且唯一，作为被依赖的key标志，依赖方使用方式 ${name}/${expose}
       library: { type: "umd", name: `${name}_remote` },		// library用于声明一个挂载的变量名（全局）,其中这里的 name 为作为 umd 的 name
-      filename: "remoteEntry.js",		// 构建后被依赖部分的入口文件名称
+      filename: `${name}_modules.js`,		// 构建后被依赖部分的入口文件名称
       exposes: {		// exposes暴露对外提供的modules模块
         './Button': "./src/components/button",
       },

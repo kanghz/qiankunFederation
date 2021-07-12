@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Link, Route, Switch } from 'react-router-dom';
+
 import './App.css';
 
 
@@ -8,7 +9,7 @@ const About = lazy(() => import('./pages/About'));
 
 export default function App() {
   return (
-    <Router basename={window.__POWERED_BY_QIANKUN__ ? '/app1' : '/'}>
+    <Router basename={window.__POWERED_BY_QIANKUN__ ? '/sub' : '/'}>
       <nav>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>

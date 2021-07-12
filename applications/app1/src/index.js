@@ -17,6 +17,7 @@ function render(props) {
   ReactDOM.render(<App />, container ? container.querySelector('#root') : document.querySelector('#root'));
 }
 
+// 判断是否为qiankun环境，非qiankun环境调用render渲染页面，qiankun环境会调用mount声明周期
 if (!window.__POWERED_BY_QIANKUN__) {
   render({});
 }
